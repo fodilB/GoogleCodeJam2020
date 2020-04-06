@@ -1,14 +1,11 @@
 def latin_square():
     N = int(input().strip())
-    
     trace = 0
-    
-    nbr_row = 0
-    
+    nbr_row = 0 
     nbr_col = 0
-    
     list_colmn = []
     
+    # For solution optimization 
     bool_val = [True]*N
     
     for i in range(N):
@@ -18,13 +15,10 @@ def latin_square():
         
         L = input().strip().split(' ')
         
-        #la trace
         trace += int(L[r])
         
-        #nbr_ligne
         if( N != len(set(L))):
             nbr_row += 1
-        
         #nbr_colonne
         cpt = 0 
 
